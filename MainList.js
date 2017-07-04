@@ -212,7 +212,7 @@ export default class MainList extends Component {
             <TouchableHighlight onPress={ () => this._pressRow(rowID)}>
                 <View>
                     <View style={styles.row}>
-                        <Image style={styles.thumb} source={{uri:rowData.picUrl.replace('http','https')}}/>
+                        <Image style={styles.thumb} source={{uri:rowData.picUrl.replace("photo.d7vg.com", "photo.psnine.com").replace('http','https')}}/>
                         <Text style={styles.text}>
                             {rowData.title }{"\n"}{rowData.desc}{"\n"}{rowData.plantForm}
                         </Text>
